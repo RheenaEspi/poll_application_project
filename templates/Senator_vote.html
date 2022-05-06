@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+<a class="btn btn-secondary btn-sm mb-3" href="{% url 'go_for_poll' %}" style="height: 32px;">Back To Polls</a>
+            {% endblock %}
+
+{% block content %}
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+
+
+
+<script>
+    setTimeout(function(){
+      if ($('#msg').length > 0) {
+        $('#msg').remove();
+      }
+    }, 2000)
+</script>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto ;
+  background-color: #fffff;
+  padding: 10px;
+  margin-left: -625px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+</style>
+
+<h1 class="text-center mb-3">Senatorial Candidates</h1>
+
+
+
+<form action="{% url 'save_the_sanetor_v' %}" method="POST">{% csrf_token %}
+
+
+
+
+	<div class="pricing-levels-3">
+        <div class="grid-container">
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/gatchalian.png" alt="sen1" style="width:155px;height:150px;"><br>
+      <input class="single-checkbox"type="checkbox" name="Sanator_1" value="Sanator_1" style="margin-right: 8px;">Win Gatchalian<br>
+
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/gordon.png" alt="sen2" style="width:155px;height:150px;"><br>
+      <input class="single-checkbox"type="checkbox" name="Sanator_2" value="Sanator_2" style="margin-right: 8px;">Dick Gordon<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/honasan.png" alt="sen3" style="width:155px;height:150px;"><br>
+      <input class="single-checkbox"type="checkbox" name="Sanator_3" value="Sanator_3" style="margin-right: 8px;">Gringo Honasan<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/trillanes.png" alt="sen4" style="width:155px;height:150px;"><br>
+      <input class="single-checkbox"type="checkbox" name="Sanator_4" value="Sanator_4" style="margin-right: 8px;">Antonio Trillanes IV<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/tulfo.png" alt="sen5" style="width:155px;height:150px;"><br>
+          <input class="single-checkbox"type="checkbox" name="Sanator_5" value="Sanator_5" style="margin-right: 8px;">Raffy Tulfo<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/villanueva.png" alt="sen6" style="width:155px;height:150px;"><br>
+        <input class="single-checkbox"type="checkbox" name="Sanator_6" value="Sanator_6" style="margin-right: 8px;">Joel VIllanueva<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/villar.png" alt="sen7" style="width:155px;height:150px;"><br>
+      <input class="single-checkbox"type="checkbox" name="Sanator_7" value="Sanator_7" style="margin-right: 8px;">Mark Villar<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/zubiri.png" alt="sen8" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_8" value="Sanator_8" style="margin-right: 8px;">Migz Zubiri<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/roque.png" alt="sen9" style="width:155px;height:150px;"><br>
+      <input class="single-checkbox"type="checkbox" name="Sanator_9" value="Sanator_9" style="margin-right: 8px;">Harry Roque<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/padilla-robin.png" alt="sen10" style="width:155px;height:150px;"><br>
+        <input class="single-checkbox"type="checkbox" name="Sanator_10" value="Sanator_10" style="margin-right: 8px;">Robin Padilla<br>
+  </div>
+  <div class="grid-item">
+       <img src="https://votepilipinas.com/candidate/img/profile-senators/legarda.png" alt="sen11" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_11" value="Sanator_11" style="margin-right: 8px;">Loren Legarda<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/gadon.png" alt="sen12" style="width:155px;height:150px;"><br>
+      <input class="single-checkbox"type="checkbox" name="Sanator_12" value="Sanator_12" style="margin-right: 8px;">Larry Gadon<br>
+  </div>
+  <div class="grid-item">
+       <img src="https://votepilipinas.com/candidate/img/profile-senators/escudero.png" alt="sen13" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_13" value="Sanator_13" style="margin-right: 8px;">Chiz Escudero<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/estrada.png" alt="sen14" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_14" value="Sanator_14" style="margin-right: 8px;">Jinggoy Estrada<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/gutoc.png" alt="sen15" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_15" value="Sanator_15" style="margin-right: 8px;">Samira Gutoc<br>
+  </div>
+  <div class="grid-item">
+       <img src="https://votepilipinas.com/candidate/img/profile-senators/diokno.png" alt="sen16" style="width:155px;height:150px;"><br>
+      <input class="single-checkbox"type="checkbox" name="Sanator_16" value="Sanator_16" style="margin-right: 8px;">Chel Diokno<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/ejercito.png" alt="sen17" style="width:155px;height:150px;"><br>
+          <input class="single-checkbox"type="checkbox" name="Sanator_17" value="Sanator_17" style="margin-right: 8px;">JV Ejercito<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/colmenares.png" alt="sen18" style="width:155px;height:150px;"><br>
+      <input class="single-checkbox"type="checkbox" name="Sanator_18" value="Sanator_18" style="margin-right: 8px;">Neri Colminares<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/delima.png" alt="sen19" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_19" value="Sanator_19" style="margin-right: 8px;">Leila De Lima<br>
+  </div>
+  <div class="grid-item">
+        <img src="https://votepilipinas.com/candidate/img/profile-senators/binay.png" alt="sen20" style="width:155px;height:150px;"><br>
+         <input class="single-checkbox"type="checkbox" name="Sanator_20" value="Sanator_20" style="margin-right: 8px;">Jejomar Binay<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/hontiveros.png" alt="sen21" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_21" value="Sanator_21" style="margin-right: 8px;">Risa Hontiveros<br>
+  </div>
+  <div class="grid-item">
+       <img src="https://votepilipinas.com/candidate/img/profile-senators/eleazar.png" alt="sen22" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_22" value="Sanator_22" style="margin-right: 8px;">Guillermo Eleazar<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/bautista.png" alt="sen23" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_23" value="Sanator_23" style="margin-right: 8px;">Herbert Bautista<br>
+  </div>
+  <div class="grid-item">
+       <img src="https://votepilipinas.com/candidate/img/profile-senators/cayetano.png" alt="sen24" style="width:155px;height:150px;"><br>
+        <input class="single-checkbox"type="checkbox" name="Sanator_24" value="Sanator_24" style="margin-right: 8px;">Allan Peter Cayetano<br>
+  </div>
+  <div class="grid-item">
+      <img src="https://votepilipinas.com/candidate/img/profile-senators/teodoro.png" alt="sen25" style="width:155px;height:150px;"><br>
+       <input class="single-checkbox"type="checkbox" name="Sanator_25" value="Sanator_25" style="margin-right: 8px;">Gibo Teodoro<br>
+  </div>
+</div>
+    </div>
+
+
+
+	<input type="submit" value="Vote" class="btn btn-success btn-lg btn-block mt-4">
+</form>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+<script>
+	var limit = 12;
+$('input.single-checkbox').on('change', function(evt) {
+   if($(this).siblings(':checked').length >= limit) {
+       this.checked = false;
+   }
+});
+
+
+</script>
+{% endblock %}

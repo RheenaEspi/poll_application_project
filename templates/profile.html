@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+
+
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+
+
+
+<script>
+    setTimeout(function(){
+      if ($('#msg').length > 0) {
+        $('#msg').remove();
+      }
+    }, 2000)
+</script>
+
+
+
+    <div class="content-section">
+
+        <form action="{% url 'lets_save' %}" method="POST">{% csrf_token %}
+
+            <input type="hidden" name="csrfmiddlewaretoken" value="t6F9Qbf7WzXRlHakCASZz2AKVq3wtiXqw4d9tmkZN6fx3G6M65WzHe8boTJUfEbB">
+
+            <input type="hidden" name="csrfmiddlewaretoken" value="mGlWSaEgmR4Jrkd74P6BDeU3ygaYQ5BJd3odCqn3t19zD3sIt40reVX3XE5OUwgg">
+
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Profile</legend>
+
+                <div id="div_id_username" class="form-group">
+                    <label for="id_username" class=" requiredField">
+                        Username
+                        <span class="asteriskField">*</span>
+                    </label>
+                    <div class="">
+                        <input type="text" name="username" maxlength="150" autofocus="" class="textinput textInput form-control" required="" id="id_username" value="{{u.Mobel_User_Name}}">
+                    </div>
+                </div>
+
+                <div id="div_id_email" class="form-group">
+                    <label for="id_email" class=" requiredField">
+                        Email
+                        <span class="asteriskField">*</span>
+                    </label>
+                    <div class="">
+                        <input type="email" name="email" class="emailinput form-control" required="" id="id_email" value="{{u.Mobel_Email_Address}}">
+                    </div>
+                </div>
+
+                Password
+                <div class="input-group mb-3">
+                  <input type="password" name="password" id="see_pass" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" value="{{u.Mobel_Password}}">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1" onclick="show()">&#128065; </span>
+                  </div>
+                </div>
+
+            </fieldset>
+            <div class="form-group" id="btn_type">
+                <button class="btn btn-outline-info" type="submit" >Update</button>
+            </div>
+        </form>
+
+
+
+    </div>
+
+
+
+<script>
+
+
+    function show(){
+    var x = document.getElementById('see_pass').type
+    if (x == 'password'){
+    document.getElementById('see_pass').type=`text`
+    }
+    else{
+    document.getElementById('see_pass').type=`password`
+    }
+
+
+
+
+
+    }
+
+</script>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+{% endblock %}

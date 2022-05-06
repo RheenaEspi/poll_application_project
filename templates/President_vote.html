@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+<a class="btn btn-secondary btn-sm mb-3" href="{% url 'go_for_poll' %}" style="height: 32px;">Back To Polls</a>
+            {% endblock %}
+
+{% block content %}
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+
+
+
+<script>
+    setTimeout(function(){
+      if ($('#msg').length > 0) {
+        $('#msg').remove();
+      }
+    }, 2000)
+</script>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #fffff;
+  padding: 20px;
+  margin-left: -445px;
+
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  height: 200px;
+  width: 210px;
+
+}
+</style>
+
+
+<h1 class="text-center mb-3">Presidential Candidates</h1>
+
+
+
+<form action="{% url 'save_the_president_v' %}" method="POST">{% csrf_token %}
+	<input type="hidden" name="csrfmiddlewaretoken" value="PpPMvVHuSLiB4eVkcZGUdLUhWbow6dic9o5Rmnq3vKdBMZSAYEszSfWj55EEiEG6">
+
+<div class="grid-container">
+  <div class="grid-item">
+	  <div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice1" value="1">
+			<img src="https://votepilipinas.com/candidate/img/abella_main.png" alt="pres1" style="width:155px;height:150px;">
+			<label for="choice1">Ernesto Abella</label>
+		</div>
+  </div>
+  <div class="grid-item">
+	  <div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice2" value="2">
+			<img src="https://votepilipinas.com/candidate/img/mangondato_main.png" alt="pres2" style="width:155px;height:150px;">
+			<label for="choice2">Faisal Mangondato</label>
+		</div>
+  </div>
+  <div class="grid-item">
+	  <div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice3" value="3">
+			<img src="https://votepilipinas.com/candidate/img/marcos_main.png" alt="pres3" style="width:155px;height:150px;">
+			<label for="choice3">Ferdinand Marcos Jr</label>
+		</div>
+  </div>
+  <div class="grid-item">
+	  <div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice4" value="4">
+			<img src="https://votepilipinas.com/candidate/img/domagoso_main.png" alt="pres4" style="width:155px;height:150px;">
+			<label for="choice4">Isko Domagoso</label>
+		</div>
+
+  </div>
+  <div class="grid-item">
+
+		<div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice5" value="5">
+			<img src="https://votepilipinas.com/candidate/img/montemayor_main.png" alt="pres5" style="width:155px;height:150px;">
+			<label for="choice5">Jose Montemayor Jr. </label>
+		</div>
+
+  </div>
+  <div class="grid-item">
+	  <div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice6" value="6">
+			<img src="https://votepilipinas.com/candidate/img/robredo_main.png" alt="pres6" style="width:155px;height:150px;">
+			<label for="choice6">Leni Robredo</label>
+		</div>
+
+  </div>
+  <div class="grid-item">
+
+		<div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice7" value="7">
+			<img src="https://votepilipinas.com/candidate/img/deguzman_main.png" alt="pres7" style="width:155px;height:150px;">
+			<label for="choice7">Leody de Guzman</label>
+		</div>
+
+  </div>
+  <div class="grid-item">
+	  <div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice8" value="8">
+			<img src="https://votepilipinas.com/candidate/img/pacquiao_main.png" alt="pres8" style="width:155px;height:150px;">
+			<label for="choice8">Manny Pacquiao</label>
+		</div>
+  </div>
+  <div class="grid-item">
+	  <div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice9" value="9">
+			<img src="https://votepilipinas.com/candidate/img/gonzales_main.png" alt="pres9" style="width:155px;height:150px;">
+			<label for="choice9">Norberto Gonzales </label>
+		</div>
+
+  </div>
+  <div class="grid-item">
+	  <div class="form-check">
+			<input type="radio" name="choice" class="form-check-input" id="choice10" value="10">
+			<img src="https://votepilipinas.com/candidate/img/lacson_main.png" alt="pres10" style="width:155px;height:150px;">
+			<label for="choice10">Ping Lacson</label>
+		</div>
+  </div>
+</div>
+
+
+
+<!--		<div class="form-check">-->
+<!--			<input type="radio" name="choice" class="form-check-input" id="choice11" value="11">-->
+<!--			<label for="choice11">President 11</label>-->
+<!--		</div>-->
+
+<!--		<div class="form-check">-->
+<!--			<input type="radio" name="choice" class="form-check-input" id="choice12" value="12">-->
+<!--			<label for="choice12">President 12</label>-->
+<!--		</div>-->
+
+	<input type="submit" value="Vote" class="btn btn-success btn-lg btn-block mt-4">
+</form>
+
+        </div>
+      </div>
+    </div>
+
+
+{% endblock %}

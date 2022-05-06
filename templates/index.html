@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="card text-center" style="margin-top: 128px;">
+
+  <div class="card-body">
+    <h1>Welcome To Election Poll</h1>
+    <p>You're Voice Matters</p>
+    <img src="{% static '' %}poll_logo.png" alt="logo" class="img-fluid" style="width: 55%;">
+    <br>
+    <br>
+    <a class="btn btn-dark"  href="{% url 'go_for_poll' %}" style="width: 226px;">
+        Vote Now</a>
+  </div>
+
+
+  </div>
+
+{% endblock %}

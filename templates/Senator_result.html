@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<!--<ul class="list-group mb-5">-->
+<!--<h1 class="mb-5 text-center">Senator Result</h1>-->
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 1  <span class="badge badge-success float-right">{{one}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 2  <span class="badge badge-success float-right">{{two}} vote</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 3  <span class="badge badge-success float-right">{{three}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 4  <span class="badge badge-success float-right">{{four}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 5  <span class="badge badge-success float-right">{{five}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 6  <span class="badge badge-success float-right">{{six}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 7  <span class="badge badge-success float-right">{{seven}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 8  <span class="badge badge-success float-right">{{eight}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 9  <span class="badge badge-success float-right">{{nine}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 10  <span class="badge badge-success float-right">{{ten}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 11  <span class="badge badge-success float-right">{{el_11}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 12  <span class="badge badge-success float-right">{{t_12}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 13  <span class="badge badge-success float-right">{{t_13}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 14  <span class="badge badge-success float-right">{{f_14}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 15  <span class="badge badge-success float-right">{{f_15}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 16  <span class="badge badge-success float-right">{{s_16}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 17  <span class="badge badge-success float-right">{{s_17}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 18  <span class="badge badge-success float-right">{{e_18}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item" style="background-color: #9acd32ab;">-->
+<!--		Senator 19  <span class="badge badge-success float-right">{{n_19}} votes</span>-->
+<!--	</li>-->
+
+<!--	<li class="list-group-item">-->
+<!--		Senator 20  <span class="badge badge-success float-right">{{t_20}} votes</span>-->
+<!--	</li>-->
+
+<!--</ul>-->
+
+<input type="hidden" id="id_one" value="{{one}}">
+<input type="hidden" id="id_two" value="{{two}}">
+<input type="hidden" id="id_three" value="{{three}}">
+<input type="hidden" id="id_four" value="{{four}}">
+<input type="hidden" id="id_five" value="{{five}}">
+<input type="hidden" id="id_six" value="{{six}}">
+<input type="hidden" id="id_seven" value="{{seven}}">
+<input type="hidden" id="id_eight" value="{{eight}}">
+<input type="hidden" id="id_nine" value="{{nine}}">
+<input type="hidden" id="id_ten" value="{{ten}}">
+<input type="hidden" id="id_el_11" value="{{el_11}}">
+<input type="hidden" id="id_t_12" value="{{t_12}}">
+<input type="hidden" id="id_t_13" value="{{t_13}}">
+<input type="hidden" id="id_f_14" value="{{f_14}}">
+<input type="hidden" id="id_f_15" value="{{f_15}}">
+<input type="hidden" id="id_s_16" value="{{s_16}}">
+<input type="hidden" id="id_s_17" value="{{s_17}}">
+<input type="hidden" id="id_e_18" value="{{e_18}}">
+<input type="hidden" id="id_n_19" value="{{n_19}}">
+<input type="hidden" id="id_t_20" value="{{t_20}}">
+<input type="hidden" id="id_t_21" value="{{t_21}}">
+<input type="hidden" id="id_t_22" value="{{t_22}}">
+<input type="hidden" id="id_t_23" value="{{t_23}}">
+<input type="hidden" id="id_t_24" value="{{t_24}}">
+<input type="hidden" id="id_t_25" value="{{t_25}}">
+
+
+<script>
+
+var o_1=document.getElementById('id_one').value
+var o_2=document.getElementById('id_two').value
+var o_3=document.getElementById('id_three').value
+var o_4=document.getElementById('id_four').value
+var o_5=document.getElementById('id_five').value
+var o_6=document.getElementById('id_six').value
+var o_7=document.getElementById('id_seven').value
+var o_8=document.getElementById('id_eight').value
+var o_9=document.getElementById('id_nine').value
+var o_10=document.getElementById('id_ten').value
+var o_11=document.getElementById('id_el_11').value
+var o_12=document.getElementById('id_t_12').value
+var o_13=document.getElementById('id_t_13').value
+var o_14=document.getElementById('id_f_14').value
+var o_15=document.getElementById('id_f_15').value
+var o_16=document.getElementById('id_s_16').value
+var o_17=document.getElementById('id_s_17').value
+var o_18=document.getElementById('id_e_18').value
+var o_19=document.getElementById('id_n_19').value
+var o_20=document.getElementById('id_t_20').value
+var o_21=document.getElementById('id_t_21').value
+var o_22=document.getElementById('id_t_22').value
+var o_23=document.getElementById('id_t_23').value
+var o_24=document.getElementById('id_t_24').value
+var o_25=document.getElementById('id_t_25').value
+
+
+
+</script>
+
+
+
+
+
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+var xValues = ["Win Gatchalia", "Dick Gordon", "Gringo Honasan", "Antonio Trillanes IV", "Raffy Tulfo", "Joel VIllanueva", "Mark Villar", "Migz Zubiri", "Harry Roque", "Robin Padilla", "Loren Legarda", "Larry Gadon", "Chiz Escudero", "Jinggoy Estrada", "Samira Gutoc", "Chel Diokno", "JV Ejercito", "Neri Colminares", "Leila De Lima", "Jejomar Binay", "Risa Hontiveros", "Guillermo Eleazar", "Herbert Bautista", "Allan Peter Cayetano", "Gibo Teodoro"];
+var yValues = [o_1, o_2, o_3, o_4, o_5, o_6, o_7, o_8, o_9, o_10, o_11, o_12, o_13, o_14, o_15, o_16, o_17, o_18, o_19, o_20,o_21,o_22,o_23,o_24,o_25];
+var barColors = ["blue", "grey","blue","grey","blue", "grey", "blue","grey","blue","grey", "blue", "grey","blue","grey","blue", "grey", "blue","grey","blue","grey","blue","grey","blue","grey","blue"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Senator Result"
+    }
+  }
+});
+</script>
+
+{% endblock %}
